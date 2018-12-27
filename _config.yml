@@ -2,16 +2,16 @@
 title:          Tale
 description:    "Minimal Jekyll theme for storytellers"
 baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+url:            "https://yoon-tale.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Yoon Hye-Jun
+  #url:          https://chester.how
+  email:        hyejun8701@gmail.com
 
 # Build settings
 markdown:       kramdown
