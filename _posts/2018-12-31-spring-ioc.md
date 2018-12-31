@@ -14,9 +14,9 @@ date: 2018-12-31 13:35
 
 *IoC 컨테이너는 @애너테이션을 붙인 자바클래스를 스캐닝(탐색)하여 POJO인스턴스, 즉 빈을 구성한다.*
 
-#자바 구성 클래스
+# 자바 구성 클래스
 > @Configuraton, @Bean
 
-#자바 컴포넌트 구성
+# 자바 컴포넌트 구성
 > @Component, @Repository, @Service, @Controller
 
