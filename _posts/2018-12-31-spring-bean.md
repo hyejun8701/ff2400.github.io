@@ -6,7 +6,7 @@ date: 2019-01-01 20:44
 ---
 
 ### @Configuration 에서 2개의 @Bean 으로 구성하였을 경우
-```
+```java
 //BeansConfig.java
 
 package com.example.spring;
@@ -35,11 +35,9 @@ public class BeansConfig {
 		return yumYum;
 	}
 }
-
 ```
 
-```
-
+```java
 //Test.java
 
 package com.example.spring;
@@ -56,5 +54,4 @@ public class Test {
 	}
 
 }
-
 ```
