@@ -20,7 +20,7 @@ public Hello hello() {
 }
 ```
   
-3. 구성클래스에 @Bean을 붙이면 그 메서드와 동일한 이름으로 빈이 생성된다.(이름을 명시하려면 @Bean(name="beanName"))
+3. @Bean을 붙이면 그 메서드와 동일한 이름으로 빈이 생성된다.(이름을 명시하려면 @Bean(name="beanName"))
 4. 스프링은 기본 구현체인 BeanFactory와 이와 호환되는 구현체 ApplicationContext. 두 가지 IoC컨테이너를 제공한다.
 5. 구현체에 자바 구성 클래스를 로드하여 사용한다.
 ```java
