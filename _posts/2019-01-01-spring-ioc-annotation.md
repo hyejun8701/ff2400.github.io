@@ -2,7 +2,7 @@
 layout: post
 title: 'Spring IoC컨테이너와 @Annotation'
 author: Yoon Hye-Jun
-date: 2019-01-01 19:38
+date: 2019-01-01 20:46
 ---
 
 #### 이전글에서 IoC컨테이너는 @애너테이션을 붙인 자바 클래스를 스캐닝(탐색)한다고 했었다.
