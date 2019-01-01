@@ -26,7 +26,7 @@ public class BeansConfig {
 	}
 
 	@Bean
-	public YumYum bake(Pizza pizza) { // autowried
+	public YumYum bake(Pizza pizza) { // 스프링에 의한 Autowiring by type from bean
 		System.out.println("bake a pizza in an oven..");
 
 		YumYum yumYum = new YumYum(pizza.getOrderList());
