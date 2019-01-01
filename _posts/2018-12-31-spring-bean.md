@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Spring @Configuration @Bean'
-author: Yoon Hye-Jun
+author: 윤혜준
 date: 2019-01-01 17:57
 ---
 
