@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '@Configuration @Bean'
+title: '@Configuration과 @Bean'
 author: Yoon Hye-Jun
 date: 2019-01-01 20:44
 ---
