@@ -2,22 +2,59 @@
 layout: post
 title: 'Spring @Configuration @Bean'
 author: Yoon Hye-Jun
-date: 2018-12-31 15:51
+date: 2019-01-01 17:57
 ---
 
+### @Configuration 에서 2개의 @Bean 으로 구성하였을 경우
 ```
+//BeansConfig.java
+
+package com.example.spring;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 @Configuration
 public class BeansConfig {
-  @Bean
-  public Say Hello() {
-    System.out.println("Hello");
-  }
-  
-  @Bean
-  public HelloWorld(Say say) {
-    say();
-    System.out.println("World!");
-  }
+	@Bean
+	public Pizza order() {
+		Pizza pizza = new Pizza();
+		pizza.setOrder("cheese");
+		pizza.setOrder("olive");
+		
+		return pizza;
+	}
+
+	@Bean
+	public YumYum bake(Pizza pizza) { // autowried
+		System.out.println("bake a pizza in an oven..");
+
+		YumYum yumYum = new YumYum(pizza.getOrderList());
+		
+		System.out.println("Completion!");
+		return yumYum;
+	}
+}
+
+```
+
+```
+
+//Test.java
+
+package com.example.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext(BeansConfig.class); // BeansConfig 만 설정하면 된다.
+		YumYum yumYum = (YumYum) context.getBean("bake");
+		yumYum.getOrderList();
+	}
+
 }
 
 ```
