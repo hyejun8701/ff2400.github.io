@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Spring @Configuration @Bean'
+title: '@Configuration @Bean'
 author: Yoon Hye-Jun
-date: 2019-01-01 17:57
+date: 2019-01-01 20:44
 ---
 
 ### @Configuration 에서 2개의 @Bean 으로 구성하였을 경우
